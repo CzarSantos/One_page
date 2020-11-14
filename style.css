@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.links{/* menu */
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.links label{/* dentro do menu */
+    padding: 10px 0;
+    flex-grow: 1;/* crescimento uniforme */
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: #fff;
+}
+.links label:hover{
+    background-color: rgba(255,255,255,.2);
+}
+.scroll input{
+    display: none;
+}
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.bloco img{
+    width: 30%;
+
+}
+#fifa{
+    background-color: rgb(68, 189, 189);
+}
+#pes{
+    background-color: rgb(59, 179, 113);
+}
+#res{
+    background-color: rgb(206, 173, 65);
+}
+#god{
+    background-color: rgb(153, 145, 145);
+}
+#thelast{
+    background-color: rgb(142, 78, 202);
+}
+/* Efeito */
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.sections{
+    transition: all .4s;
+}
+#rd_pes:checked ~.sections{/* segundo item */
+    margin-top: -100vh;/* retrair */
+}
+#rd_res:checked ~.sections{/* segundo item */
+    margin-top: -200vh;/* retrair */
+}
+#rd_gow:checked ~.sections{/* segundo item */
+    margin-top: -300vh;/* retrair */
+}
+#rd_tlou:checked ~.sections{/* segundo item */
+    margin-top: -400vh;/* retrair */
+}
